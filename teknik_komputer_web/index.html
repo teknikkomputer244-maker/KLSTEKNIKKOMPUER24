@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teknik Komputer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="nav">
+    <div class="brand">
+      <img src="assets/teknik-logo.jpg" alt="logo" id="logo" />
+      <div class="brand-text"><div class="big">TEKNIK</div><div class="small">KOMPUTER</div></div>
+    </div>
+    <nav class="menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#struktur">Struktur Kelas</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="beranda" class="hero">
+    <div class="hero-inner">
+      <img id="hero-logo" src="assets/teknik-logo.jpg" alt="logo" />
+      <h1>Teknik <span class="accent">Komputer</span></h1>
+      <p class="lead">Selamat datang di Website Teknik Komputer – Tempat kreativitas dan teknologi bersatu.</p>
+      <div class="cta">
+        <a class="btn primary" href="#struktur">Lihat Struktur Kelas</a>
+        <a class="btn ghost" href="#galeri">Buka Galeri</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="struktur" class="section">
+    <div class="container">
+      <h2>Struktur Kelas</h2>
+      <p class="muted">Diagram alir organisasi kelas (nama dan jabatan).</p>
+      <div class="diagram">
+        <div class="box top">
+          <div class="title">Koordinator</div>
+          <div class="name">Rafli Ilham</div>
+        </div>
+
+        <svg class="connect" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden>
+          <path id="left-path" d="M300 0 C300 30, 180 80, 120 100" stroke="#ff6b6b" stroke-width="3" fill="none" stroke-linecap="round"></path>
+          <path id="right-path" d="M300 0 C300 30, 420 80, 480 100" stroke="#ff6b6b" stroke-width="3" fill="none" stroke-linecap="round"></path>
+        </svg>
+
+        <div class="row">
+          <div class="box">
+            <div class="title">Ketua Tingkat</div>
+            <div class="name">Sahira Nita</div>
+          </div>
+          <div class="box">
+            <div class="title">Admin Web</div>
+            <div class="name">Inox Kom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="section dark">
+    <div class="container">
+      <h2>Galeri Kegiatan</h2>
+      <p class="muted">Unggah foto kegiatan — preview otomatis, bisa hapus satu atau semua.</p>
+
+      <div class="uploader">
+        <label class="upload-btn">Unggah Foto
+          <input id="file" type="file" accept="image/*" multiple/>
+        </label>
+        <button id="delAll" class="btn warn">Hapus Semua</button>
+      </div>
+
+      <div id="grid" class="grid">
+        <!-- placeholders -->
+        <div class="placeholder">Contoh Foto 1</div>
+        <div class="placeholder">Contoh Foto 2</div>
+        <div class="placeholder">Contoh Foto 3</div>
+        <div class="placeholder">Contoh Foto 4</div>
+        <div class="placeholder">Contoh Foto 5</div>
+        <div class="placeholder">Contoh Foto 6</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="section">
+    <div class="container">
+      <h3>Kontak</h3>
+      <p class="muted">Alamat | Telepon | Email</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Teknik Komputer — Semua Hak Dilindungi
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
